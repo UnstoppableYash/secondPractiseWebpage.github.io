@@ -1,0 +1,112 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: Xero;
+    src: url(../fonts/Xero.otf);
+}
+
+@font-face{
+    font-family: HemiHead;
+    src: url(../fonts/HemiHead.ttf);
+}
+
+header{
+    width: 100%; height: 100vh;
+    background-image: linear-gradient(to left, #fff 80%, #c3f5ff 20%);
+}
+
+.mainHeader{
+    width: 100%;
+    height: 15vh;
+    display: flex; justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to top, #fff 80%, #c3f5ff 20%);
+}
+
+.logo{
+    width: 36%; line-height: 6vh;
+    box-sizing: border-box;
+    padding-left: 60px;
+    background-image: linear-gradient(#8d98e3 40%, #854fee);
+    box-shadow: black 2px 3px 5px;
+    padding-right: 50px;
+    padding-top: 5px;
+}
+
+.logo h1{
+    animation: aagepiche 1s linear infinite;
+    animation-direction: alternate;
+    font-family: Xero;
+}
+
+@keyframes aagepiche{
+    from{ padding-left: 10px; }
+    to{ padding-right: 10px; }
+}
+
+.navigation{
+    width: 56%; height: 18vh;
+    display: flex; justify-content: space-between;
+    align-items: center;
+    padding-right: 15px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    position: relative;
+}
+nav a:first-child{
+    color: #4458dc;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftSec{
+    padding-top: 200px;
+    padding-left: 60px;
+}
+
+.leftSec h2{
+    font-size: 40px;
+    font-weight: 460;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.leftSec h1{
+    font-size: 65px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.leftSec p{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.rightSec img{
+    padding-top: 75px;
+    padding-right: 30px;
+}
+
+
+nav a:before{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 0px;
+    height: 2px;
+    border-bottom: 2px solid black;
+    transition: 0.4s all linear;
+} 
+
+nav a:hover:before{
+    width: 80px;
+}
